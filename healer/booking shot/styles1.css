@@ -1,0 +1,53 @@
+/* styles1.css */
+
+/* Style for the card container */
+.booking-box {
+    width: 300px; /* Adjust as needed */
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the card image */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style for the card title */
+.card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Style for the card description */
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Style for the "Book Now" button */
+.image-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change color as needed */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-button:hover {
+    background-color: #0056b3; /* Change color on hover as needed */
+}
+
+/* Style for the button within the card */
+.card .image-button {
+    margin-top: 10px;
+}
+
+/* Optionally, add more styling as needed */

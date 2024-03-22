@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact">
+        <h2>Contact Me!</h2>
+        <form id="contactForm" action="#" method="POST">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt" id="nameError">Full Name Can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt" id="emailError">Email address Can't be blank</div>
+                </div>
+            </div>
+            <!-- Phone Number and Subject -->
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="Phone" class="item" autocomplete="off">
+                    <div class="error-txt" id="phoneError">Phone Number Can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <select id="Subject" class="item" onchange="updateCost()">
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="Tarot sessions">Tarot sessions 30min:-1500</option>
+                        <option value="Oracle card reading included">Oracle card reading included</option>
+                        <option value="Past life reading">Past life reading</option>
+                        <option value="psychic sessions">psychic sessions</option>
+                        <option value="Aakashic reading">Aakashic reading</option>
+                        <option value="Mediumship session">Mediumship session</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                    <div class="error-txt" id="subjectError">Please select a subject</div>
+                </div>
+            </div>
+            <!-- Display cost based on selected subject -->
+            <div id="costSection" class="field">Cost: </div>
+            <!-- Textarea field -->
+            <div class="input-box">
+                <div class="textarea-field field">
+                    <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message......" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt" id="messageError">Your Message Can't be blank</div>
+                </div>
+            </div>
+            <!-- Submit button -->
+            <div class="input-box">
+                <button type="submit" id="submitButton" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

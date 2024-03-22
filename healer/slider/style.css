@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    border: black solid 3px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width:60pc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.626);
+}
+
+.contact h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: 48%;
+}
+
+.input-field.field input, 
+.input-field.field select {
+    width: 94%;
+    padding: 10px;
+    margin-top: 5px;
+    margin: 3px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-field.field select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+
+.input-field.field textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.error-txt {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+@media only screen and (max-width: 767px) {
+    .contact {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .input-field.field input,
+    .input-field.field select,
+    .input-field.field textarea {
+        width:  calc(94% + 5px);
+        margin-right: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
